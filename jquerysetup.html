@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="jquerysetup.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+		</script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#img').toggle();
+				$('#add-class-btn').click( function(){ 
+					$('#add-class-p').addClass('red');
+				});
+			});
+			
+		</script>
+	</head>
+	<body>
+		 <div class="container">
+		 	<div class="add-class">
+		 		<h1 class="add-class-h1">Add Class</h1>
+		 		<button class="add-class-btn" id="add-class-btn">Add Class</button>
+		 		<p class="add-class-p" id="add-class-p">Click the button to add class 'red' to this paragraph</p>
+		 		<div class="divider"></div>
+		 	</div>
+		 	<div class="slide-toggle">
+		 		<h1 class="slide-toggle-h1">Slide toggle</h1>
+		 		<button class="slide-toggle-btn">Slide toggle</button>
+		 		<p class="slide-toggle-p">Click the button slidetoggle a hidden image</p>
+		 		<img src="down2.png" alt="Ninja" class="img" id="img">
+		 		<div class="divider"></div>
+		 	</div>
+		 	<div class="append">
+		 		<h1 class="append-h1">Append</h1>
+		 		<button class="append-btn">Append</button>
+		 		<p class="append-p">Click the button to append new paragraph</p>
+		 		<div class="divider"></div>
+		 	</div>
+		 </div>
+	</body>
+</html>
